@@ -6,7 +6,7 @@ RSpec.describe Event, type: :model do
       title: "New Event",
       description: "Good event!",
       price: 50,
-      date: "Sun, 25 Sep 2022"
+      date: Date.today
     )
   }
   before { subject.save! }

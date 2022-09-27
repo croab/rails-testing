@@ -1,11 +1,13 @@
 require 'rails_helper'
+require 'date'
 
 RSpec.describe "events/edit", type: :view do
   before(:each) do
     @event = assign(:event, Event.create!(
       title: "MyString",
-      description: "MyString",
-      price: 1
+      description: "MyStringHere",
+      price: 1,
+      date: Date.today
     ))
   end
 
